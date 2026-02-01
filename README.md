@@ -136,16 +136,6 @@ Both methods were applied directly to the **full preprocessing + model pipeline*
 
 ---
 
-## Future Enhancements
-
-- Extend model to Ridge, Lasso, and ElasticNet  
-- Add feature selection within pipeline  
-- Persist trained pipeline using `joblib`  
-- Deploy model as REST API or web application  
-- Add automated model evaluation and monitoring  
-
----
-
 ## How to Run
 
 ### 1. Clone the repository
@@ -157,6 +147,7 @@ pip install pandas numpy scikit-learn
 
 jupyter notebook HousePricePrediction_Pipeline.ipynb
 
+```
 
 ---
 
