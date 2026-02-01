@@ -130,7 +130,9 @@ Both methods were applied directly to the **full preprocessing + model pipeline*
 ## Project Structure
 
 ├── HousePricePrediction_Pipeline.ipynb
+
 ├── Housing.csv
+
 ├── README.md
 
 
