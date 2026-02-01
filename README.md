@@ -1,168 +1,153 @@
-House Price Prediction using Scikit-Learn Pipelines (Machine Learning Project)
+# House Price Prediction using Scikit-Learn Pipelines (Machine Learning Project)
 
-An end-to-end Machine Learning regression project focused on data preprocessing, feature engineering, cross-validation, and hyperparameter tuning using Scikit-Learn Pipelines.
-Designed to demonstrate production-ready ML workflows, data leakage prevention, and reproducible model training.
+An **end-to-end Machine Learning regression project** focused on **data preprocessing, feature engineering, cross-validation, and hyperparameter tuning** using **Scikit-Learn Pipelines**.  
+Designed to demonstrate **production-ready ML workflows**, **data leakage prevention**, and **reproducible model training**.
 
-Project Summary
+---
 
-Built a supervised regression model to predict house prices using tabular data
+## Project Summary
 
-Implemented numerical and categorical feature pipelines using Pipeline and ColumnTransformer
+- Built a **supervised regression model** to predict house prices using tabular data  
+- Implemented **numerical and categorical feature pipelines** using `Pipeline` and `ColumnTransformer`  
+- Applied **5-fold cross-validation** for robust model evaluation  
+- Performed **hyperparameter optimization** using `GridSearchCV` and `RandomizedSearchCV`  
+- Evaluated model performance using **MAE, MSE, RMSE, and R²**  
+- Followed **industry best practices** for scalable and maintainable ML systems  
 
-Applied cross-validation (5-fold) for robust model evaluation
+---
 
-Performed hyperparameter optimization using GridSearchCV and RandomizedSearchCV
+## Tech Stack & Skills
 
-Evaluated model performance using MAE, MSE, RMSE, and R²
+### Programming Language
+- Python
 
-Followed industry best practices for scalable and maintainable ML systems
+### Libraries & Frameworks
+- Pandas  
+- NumPy  
+- Scikit-Learn  
 
-Tech Stack & Skills
+### Machine Learning Concepts
+- Regression Modeling  
+- Feature Engineering  
+- Data Preprocessing  
+- One-Hot Encoding  
+- Feature Scaling  
+- Cross-Validation  
+- Hyperparameter Tuning  
+- Model Evaluation Metrics  
+- Pipeline Architecture  
+- Data Leakage Prevention  
 
-Programming Language
+---
 
-Python
-
-Libraries & Frameworks
-
-Pandas, NumPy
-
-Scikit-Learn
-
-Machine Learning Concepts
-
-Regression Modeling
-
-Feature Engineering
-
-Data Preprocessing
-
-One-Hot Encoding
-
-Feature Scaling
-
-Cross-Validation
-
-Hyperparameter Tuning
-
-Model Evaluation Metrics
-
-Pipeline Architecture
-
-Data Leakage Prevention
-
-Problem Statement
+## Problem Statement
 
 Predict housing prices based on structured numerical and categorical features while ensuring:
+- Proper preprocessing of mixed data types  
+- No information leakage between training and test sets  
+- Reliable performance estimation using cross-validation  
 
-Proper preprocessing of mixed data types
+---
 
-No information leakage between training and test sets
-
-Reliable performance estimation using cross-validation
-
-Solution Architecture
+## Solution Architecture
 Raw Data
-  ↓
+↓
 Train–Test Split
-  ↓
+↓
 Numerical Pipeline (Imputation + Scaling)
 Categorical Pipeline (Imputation + One-Hot Encoding)
-  ↓
+↓
 ColumnTransformer
-  ↓
+↓
 Linear Regression Model
-  ↓
+↓
 Cross-Validation
-  ↓
+↓
 Hyperparameter Tuning
-  ↓
+↓
 Final Evaluation
 
-Data Preprocessing & Feature Engineering
-Numerical Features
+---
 
-Missing value handling using mean imputation
+## Data Preprocessing & Feature Engineering
 
-Feature scaling using StandardScaler
+### Numerical Features
+- Missing value handling using mean imputation  
+- Feature scaling using `StandardScaler`  
 
-Categorical Features
+### Categorical Features
+- Missing value handling using most frequent category  
+- One-Hot Encoding with `handle_unknown='ignore'`  
 
-Missing value handling using most frequent category
+All preprocessing steps are applied using **Scikit-Learn Pipelines** to ensure consistency across training, validation, and inference.
 
-One-Hot Encoding with handle_unknown='ignore'
+---
 
-Preprocessing steps are applied using Scikit-Learn Pipelines to ensure consistency across training, validation, and inference.
+## Model Training
 
-Model Training
+- Model: **Linear Regression**  
+- Dataset split: **80% training / 20% testing**  
+- Preprocessing and model training executed as a **single pipeline**  
+- Ensures reproducibility and clean experimentation  
 
-Model: Linear Regression
+---
 
-Dataset split: 80% training / 20% testing
-
-Preprocessing and model training executed as a single pipeline
-
-Ensures reproducibility and clean experimentation
-
-Model Evaluation
+## Model Evaluation
 
 Model performance evaluated using standard regression metrics:
+- Mean Absolute Error (MAE)  
+- Mean Squared Error (MSE)  
+- Root Mean Squared Error (RMSE)  
+- R² Score  
 
-Mean Absolute Error (MAE)
+---
 
-Mean Squared Error (MSE)
+## Hyperparameter Optimization
 
-Root Mean Squared Error (RMSE)
+### GridSearchCV
+- Exhaustive search across parameter combinations  
+- 5-fold cross-validation  
+- Optimized using R² score  
 
-R² Score
+### RandomizedSearchCV
+- Random sampling of parameter space  
+- Faster and computationally efficient  
+- Suitable for scalable model experimentation  
 
-Hyperparameter Optimization
-GridSearchCV
+Both methods were applied directly to the **full preprocessing + model pipeline**.
 
-Exhaustive search across parameter combinations
+---
 
-5-fold cross-validation
+## Key Outcomes
 
-Optimized using R² score
+- Built a **robust, end-to-end ML pipeline**  
+- Prevented data leakage through pipeline-based preprocessing  
+- Improved generalization using cross-validated hyperparameter tuning  
+- Created a reusable and deployment-ready ML workflow  
 
-RandomizedSearchCV
+---
 
-Random sampling of parameter space
+## Project Structure
 
-Faster and computationally efficient
-
-Suitable for scalable model experimentation
-
-Both methods were applied directly to the full preprocessing + model pipeline.
-
-Key Outcomes
-
-Built a robust, end-to-end ML pipeline
-
-Prevented data leakage through pipeline-based preprocessing
-
-Improved generalization using cross-validated hyperparameter tuning
-
-Created a reusable and deployment-ready ML workflow
-
-Project Structure
 ├── HousePricePrediction_Pipeline.ipynb
 ├── Housing.csv
 ├── README.md
 
-Future Enhancements
 
-Extend model to Ridge, Lasso, and ElasticNet
+---
 
-Add feature selection within pipeline
+## Future Enhancements
 
-Persist trained pipeline using joblib
+- Extend model to Ridge, Lasso, and ElasticNet  
+- Add feature selection within pipeline  
+- Persist trained pipeline using `joblib`  
+- Deploy model as REST API or web application  
+- Add automated model evaluation and monitoring  
 
-Deploy model as REST API or web application
+---
 
-Add automated model evaluation and monitoring
+## Author
 
-Author
+**Damodaran Selvaraj**  
 
-Damodaran Selvaraj
-Machine Learning | Data Science | Python
+---
