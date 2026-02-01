@@ -157,6 +157,9 @@ pip install pandas numpy scikit-learn
 
 jupyter notebook HousePricePrediction_Pipeline.ipynb
 
+
+---
+
 ## Author
 
 **Damodaran Selvaraj**  
