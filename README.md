@@ -146,6 +146,17 @@ Both methods were applied directly to the **full preprocessing + model pipeline*
 
 ---
 
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/damodaranselvaraj/HousePricePrediction_Pipeline.git
+
+pip install pandas numpy scikit-learn
+
+jupyter notebook HousePricePrediction_Pipeline.ipynb
+
 ## Author
 
 **Damodaran Selvaraj**  
